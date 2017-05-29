@@ -5,7 +5,7 @@
 ================================================================================
 */
 header{
-	background:#f0f0f0 url(../img/bg_header.jpg) no-repeat left top;
+
 	width:100%; height: 80px;
 	min-width: $min-width;
 	text-align:left;	
@@ -13,7 +13,25 @@ header{
     -webkit-order: 1;	
 }
 
+.header {
+	&__wrapper {
+		@include wrapper-pref;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		background: url(../img/logo.png) no-repeat;
+		width: 206px;
+		height: 49px;
+		display: block;
+	}
+	&__inner-wrapper {
+		display: flex;
+		align-items: center;
+	}
 
+}
 
 @media screen and (max-width: 1200px) {
 	

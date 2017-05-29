@@ -4,7 +4,12 @@ $(window).load(function(){
 	} else{
 		$('body').addClass('web');
 	};
-	$('body').removeClass('loaded'); 
+	$('body').removeClass('loaded');
+	$('.background-slider').slick({
+		autoplay: true,
+		arrows: false,
+		fade: true
+	});
 });
 /* viewport width */
 function viewport(){

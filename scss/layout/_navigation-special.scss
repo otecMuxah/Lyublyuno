@@ -1,0 +1,16 @@
+.navigation-special {
+    &__list {
+        @include reset-list;
+        display: flex;
+    }
+    &__link {
+        font-size: 14px;
+        color: $text-color;
+    }
+    &__item {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

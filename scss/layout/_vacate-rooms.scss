@@ -1,0 +1,42 @@
+.vacate-rooms {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+        flex: 0 0 180px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px;
+    }
+    &__link {
+        background: url(../img/room.jpg) no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 100px;
+        display: block;
+        margin: 0 0 10px;
+
+    }
+    &__room-size {
+        position: relative;
+        align-self: flex-end;
+        padding-left: 40px;
+        &:before {
+            content: "\e923";
+            font-family: IconFont;
+            color: $text-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:after {
+            content: "- \e924";
+            font-family: IconFont;
+            color: $text-color;
+            position: absolute;
+            top: 0;
+            left: 12px;
+        }
+    }
+}

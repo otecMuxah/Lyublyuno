@@ -1,171 +1,207 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Главная</title>
-	<meta name='description' content="" />
-	<meta name="keywords" content="" />
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>Главная</title>
+    <meta name='description' content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body class="loaded">
 
-							
+
 <!-- BEGIN BODY -->
 
 <div class="main-wrapper">
 
 
+    <!-- BEGIN HEADER -->
 
-<!-- BEGIN HEADER -->
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <a href="/" class="header__logo"></a>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Об отеле</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Номера</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Правила проживания</a></li>
+                </ul>
+            </nav>
+            <div class="header__inner-wrapper">
+                <div class="language-switch">
+                    <ul class="language-switch__list">
+                        <li class="language-switch__item"><a href="#" class="language-switch__link">Ru</a></li>
+                        <li class="language-switch__item"><a href="#" class="language-switch__link">En</a></li>
+                        <li class="language-switch__item"><a href="#" class="language-switch__link">Ch</a></li>
+                    </ul>
+                </div>
+                <nav class="navigation-special">
+                    <ul class="navigation-special__list">
+                        <li class="navigation-special__item"><a href="#" class="navigation-special__link">Отзывы</a>
+                        </li>
+                        <li class="navigation-special__item"><a href="#" class="navigation-special__link">Новости</a>
+                        </li>
+                        <li class="navigation-special__item"><a href="#" class="navigation-special__link">Услуги</a>
+                        </li>
+                        <li class="navigation-special__item"><a href="#" class="navigation-special__link">Спецпредложения</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-	<header class="header">
-		<div class="wrapper header__wrapper">
-			<a href="/" class="header__logo"></a>
-			<nav class="navigation">
-				<ul class="navigation__list">
-					<li class="navigation__item"><a href="#" class="navigation__link">Об отеле</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Номера</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Правила проживания</a></li>
-				</ul>
-			</nav>
-			<div class="language-switch">
-				<ul class="language-switch__list">
-					<li class="language-switch__item"><a href="#" class="language-switch__link">Ru</a></li>
-					<li class="language-switch__item"><a href="#" class="language-switch__link">En</a></li>
-					<li class="language-switch__item"><a href="#" class="language-switch__link">Ch</a></li>
-				</ul>
-			</div>
-			<nav class="navigation-special">
-				<ul class="navigation-special__list">
-					<li class="navigation-special__item"><a href="#" class="navigation-special__link"></a></li>
-					<li class="navigation-special__item"><a href="#" class="navigation-special__link"></a></li>
-					<li class="navigation-special__item"><a href="#" class="navigation-special__link"></a></li>
-					<li class="navigation-special__item"><a href="#" class="navigation-special__link"></a></li>
-				</ul>
-			</nav>
-		</div>		
-	</header>
-	
-<!-- HEADER EOF   -->
+    <!-- HEADER EOF   -->
 
-<!-- BEGIN CONTENT -->
+    <!-- BEGIN CONTENT -->
 
-<main class="content">
-	<div class="wrapper content__wrapper">
-		<div class="content__left-side">
-			<article class="main-article">
-				<p></p>
-				<p></p>
-				<p></p>
-			</article>
-			<h2>Свободные номера подходящие вашим критериям</h2>
-			<ul class="vacate-rooms">
-				<li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a></li>
-				<li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a></li>
-				<li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a></li>
-				<li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a></li>
-				<li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a></li>
-				<li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a></li>
-			</ul>
-		</div>
-		<form class="content__right-side booking-form">
-			<label for="roomSize" class="booking-form__label">
-				<span class="booking-form__title">Тип номера</span>
-				<select name="" id="roomSize" class="booking-form__select">
-					<option value="1">Эконом</option>
-					<option value="2">Люкс</option>
-				</select>
-			</label>
-			<label for="adultsNum" class="booking-form__label number-of-people">
-				<span class="booking-form__title">Взрослые</span>
-				<select name="" id="adultsNum" class="booking-form__select">
-					<option value="1">1</option>
-					<option value="2">2</option>
-				</select>
-			</label>
-			<label for="childrenNum" class="booking-form__label number-of-people">
-				<span class="booking-form__title">Дети</span>
-				<select name="" id="childrenNum" class="booking-form__select">
-					<option value="1">0</option>
-					<option value="2">1</option>
-				</select>
-			</label>
-			<label for="arriveDate" class="booking-form__label date-input">
-				<span class="booking-form__title">Заезд</span>
-				<input type="date" id="arriveDate" class="booking-form__date-input">
-			</label>
-			<label for="checkoutDate" class="booking-form__label date-input">
-				<span class="booking-form__title">Отъезд</span>
-				<input type="date" id="checkoutDate" class="booking-form__date-input">
-			</label>
-			<label for="emailInput" class="booking-form__label">
-				<span class="booking-form__title">Отъезд</span>
-				<input type="email" id="emailInput" class="booking-form__text-input">
-			</label>
-			<label for="phoneInput" class="booking-form__label">
-				<span class="booking-form__title">Отъезд</span>
-				<input type="text" id="phoneInput" class="booking-form__text-input">
-			</label>
-			<label for="phoneInput" class="booking-form__label additional-services">
-				<span class="booking-form__title">Дополнитьельные услуги</span>
-				<ul class="additional-services__list">
-					<li class="additional-services__item"><label for="businessLunch" class="additional-services__label"><input
-							type="checkbox" class="additional-services__checkbox" id="businessLunch"><span
-							class="additional-services__text">Бизнес ланч</span></label></li>
-					<li class="additional-services__item"><label for="dinnerCheckbox" class="additional-services__label"><input
-							type="checkbox" class="additional-services__checkbox" id="dinnerCheckbox"><span
-							class="additional-services__text">Ужин</span></label></li>
-					<li class="additional-services__item"><label for="lunchCheckbox" class="additional-services__label"><input
-							type="checkbox" class="additional-services__checkbox" id="lunchCheckbox"><span
-							class="additional-services__text">Полдник</span></label></li>
-					<li class="additional-services__item"><label for="champagneCheckbox" class="additional-services__label"><input
-							type="checkbox" class="additional-services__checkbox" id="champagneCheckbox"><span
-							class="additional-services__text">Шампанское</span></label></li>
-				</ul>
-			</label>
-			<div class="booking-form__result">
-				<span class="booking-form__title">Итого</span>
-				<span class="booking-form__summ">26 400 р.</span>
-			</div>
-			<button class="booking-form__submit" type="submit">Заказать</button>
-		</form>
-	</div>
-</main>
+    <main class="content">
+        <div class="wrapper content__wrapper">
+            <div class="content__left-side">
+                <article class="main-article">
+                    <p>Онлайн бронирование номеров в отеле «Люблю-Но» - простота и комфорт. С помощью приведенной формы
+                        вы сможете забронировать наши номера в режиме онлайн и получить гарантированную бронь. Заказ
+                        номера займет у вас считанные минуты. Наши менеджеры работают оперативно и без ошибок, поэтому
+                        вы можете не сомневаться, что, когда Вы приедете, номер уже будет подготовлен к вашему приезду.
+                    </p>
+                    <p>Оплата проживания в нашем отеле может быть осуществлена наличными по прибытии в отель.</p>
+                    <p>Если у вас возникли вопросы или трудности в ходе бронирования – звоните нам по номеру <a
+                            href="tel:+7(495)3510303" class="main-article__phone">+7 (495) 351-03-03</a></p>
 
-<!-- CONTENT EOF   -->
+                    <h2>Свободные номера подходящие вашим критериям</h2>
+                    <ul class="vacate-rooms">
+                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
+                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
+                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
+                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
+                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
+                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
+                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                    </ul>
+                </article>
+            </div>
+            <form class="content__right-side booking-form" m>
+                <label for="roomSize" class="booking-form__label">
+                    <span class="booking-form__title">Тип номера</span>
+                    <select name="" id="roomSize" class="booking-form__select">
+                        <option value="1">Эконом</option>
+                        <option value="2">Люкс</option>
+                    </select>
+                </label>
+                <label for="adultsNum" class="booking-form__label number-of-people">
+                    <span class="booking-form__title">Взрослые</span>
+                    <select name="" id="adultsNum" class="booking-form__select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </label>
+                <label for="childrenNum" class="booking-form__label number-of-people">
+                    <span class="booking-form__title">Дети</span>
+                    <select name="" id="childrenNum" class="booking-form__select">
+                        <option value="1">0</option>
+                        <option value="2">1</option>
+                    </select>
+                </label>
+                <label for="arriveDate" class="booking-form__label date-input">
+                    <span class="booking-form__title">Заезд</span>
+                    <input type="date" id="arriveDate" class="booking-form__date-input">
+                </label>
+                <label for="checkoutDate" class="booking-form__label date-input">
+                    <span class="booking-form__title">Отъезд</span>
+                    <input type="date" id="checkoutDate" class="booking-form__date-input">
+                </label>
+                <label for="emailInput" class="booking-form__label">
+                    <span class="booking-form__title">Отъезд</span>
+                    <input type="email" id="emailInput" class="booking-form__text-input">
+                </label>
+                <label for="phoneInput" class="booking-form__label">
+                    <span class="booking-form__title">Отъезд</span>
+                    <input type="text" id="phoneInput" class="booking-form__text-input">
+                </label>
+                <label for="phoneInput" class="booking-form__label additional-services">
+                    <span class="booking-form__title">Дополнитьельные услуги</span>
+                    <ul class="additional-services__list">
+                        <li class="additional-services__item"><label for="businessLunch"
+                                                                     class="additional-services__label"><input
+                                type="checkbox" class="additional-services__checkbox" id="businessLunch"><span
+                                class="additional-services__text">Бизнес ланч</span></label></li>
+                        <li class="additional-services__item"><label for="dinnerCheckbox"
+                                                                     class="additional-services__label"><input
+                                type="checkbox" class="additional-services__checkbox" id="dinnerCheckbox"><span
+                                class="additional-services__text">Ужин</span></label></li>
+                        <li class="additional-services__item"><label for="lunchCheckbox"
+                                                                     class="additional-services__label"><input
+                                type="checkbox" class="additional-services__checkbox" id="lunchCheckbox"><span
+                                class="additional-services__text">Полдник</span></label></li>
+                        <li class="additional-services__item"><label for="champagneCheckbox"
+                                                                     class="additional-services__label"><input
+                                type="checkbox" class="additional-services__checkbox" id="champagneCheckbox"><span
+                                class="additional-services__text">Шампанское</span></label></li>
+                    </ul>
+                </label>
+                <div class="booking-form__result">
+                    <span class="booking-form__title">Итого</span>
+                    <span class="booking-form__summ">26 400 р.</span>
+                </div>
+                <button class="booking-form__submit" type="submit">Заказать</button>
+            </form>
+        </div>
+    </main>
 
-<!-- BEGIN FOOTER -->	
-	
-	<footer class="footer">
-		<div class="wrapper footer__wrapper">
-			<a href="tel:+7(495)3510303" class="footer__phone">+7 (495) 351-03-03</a>
-			<ul class="about-us">
-				<li class="about-us__item"><a href="#" class="about-us__link">О нас</a></li>
-				<li class="about-us__item"><a href="#" class="about-us__link">Группа компаний «Вест»</a></li>
-			</ul>
-		</div>	
-	</footer>
-	
-<!-- FOOTER EOF   -->
+    <!-- CONTENT EOF   -->
 
-</div>		
+    <!-- BEGIN FOOTER -->
 
-<div class="icon-load"></div>		
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <a href="tel:+7(495)3510303" class="footer__phone">+7 (495) 351-03-03</a>
+            <ul class="about-us">
+                <li class="about-us__item"><a href="#" class="about-us__link">О нас</a></li>
+                <li class="about-us__item"><a href="#" class="about-us__link">Группа компаний «Вест»</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- FOOTER EOF   -->
+
+</div>
+
+<div class="background-slider-wrapper">
+    <div class="background-slider">
+        <div class="background-slider__slide">
+            <div class="background-slider__filter"></div>
+            <div class="background-slider__image"></div>
+        </div>
+        <div class="background-slider__slide">
+            <div class="background-slider__filter"></div>
+            <div class="background-slider__image"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="icon-load"></div>
 
 <!-- BODY EOF   -->
-	
-	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>		
-	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js" ></script>
-	<!--
-	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
-	<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
-	<script type="text/javascript" src="js/components/slick.js" ></script>
-	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
-	-->
-	<script type="text/javascript" src="js/custom.js" ></script>
+
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/components/slick.js"></script>
+<!--
+<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
+
+<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
+-->
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

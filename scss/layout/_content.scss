@@ -19,6 +19,7 @@
 	justify-content:flex-start;	
     -webkit-justify-content:flex-start;	
     -ms-flex-pack: start;
+	z-index: 1;
 }
 .wrapper{
 	min-width: $min-width;
@@ -79,7 +80,15 @@ h3{
     -webkit-order: 2;
 	flex-grow: 1;
     -webkit-flex-grow: 1;
-	background: #fff000;
+	&__wrapper {
+		@include wrapper-pref;
+		display: flex;
+	}
+	&__left-side,
+	&__right-side {
+		flex: 0 0 50%;
+	}
+
 }
 
 

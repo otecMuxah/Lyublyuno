@@ -84,3 +84,15 @@
     line-height: $font-h;
     color:$font-c;
 }
+
+@mixin wrapper-pref() {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+@mixin reset-list() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
