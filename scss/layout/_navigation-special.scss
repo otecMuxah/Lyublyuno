@@ -1,16 +1,28 @@
 .navigation-special {
+    margin-right: 3px;
     &__list {
         @include reset-list;
         display: flex;
+        @include width-768 {
+            flex-direction: column;
+            align-items: flex-end;
+        }
     }
     &__link {
         font-size: 14px;
         color: $text-color;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__item {
-        margin-right: 15px;
+        margin-right: 16px;
         &:last-child {
             margin-right: 0;
         }
+        @include width-768 {
+            margin: 0 0 15px;
+        }
+
     }
 }

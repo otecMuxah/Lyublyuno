@@ -14,17 +14,26 @@ header{
 }
 
 .header {
+	margin-bottom: 30px;
+	height: auto;
 	&__wrapper {
 		@include wrapper-pref;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding-top: 20px;
+		@include width-1310 {
+			flex-wrap: wrap;
+		}
 	}
 	&__logo {
 		background: url(../img/logo.png) no-repeat;
 		width: 206px;
 		height: 49px;
 		display: block;
+		@include width-1310 {
+			flex-basis: 100%;
+		}
 	}
 	&__inner-wrapper {
 		display: flex;

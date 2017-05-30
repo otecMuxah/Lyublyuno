@@ -80,15 +80,37 @@ h3{
     -webkit-order: 2;
 	flex-grow: 1;
     -webkit-flex-grow: 1;
+
 	&__wrapper {
 		@include wrapper-pref;
 		display: flex;
+		@include width-768 {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 30px;
+		}
 	}
 	&__left-side,
 	&__right-side {
-		flex: 0 0 50%;
+		flex: 0 0 48%;
+		@include width-768 {
+			flex: 0 0 100%;
+		}
 	}
-
+	&__left-side {
+		margin-right: 73px;
+		@include width-1310 {
+			flex: 1 1 70%;
+		}
+		@include width-768 {
+			margin: 0 0 20px;
+		}
+	}
+	&__right-side {
+		@include width-1310 {
+			flex: 1 1 30%;
+		}
+	}
 }
 
 

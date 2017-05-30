@@ -1,0 +1,68 @@
+.additional-services {
+    display: flex;
+    flex-direction: column;
+    margin: 43px 0 51px;
+    .booking-form__title {
+        width: 100%;
+        flex: 0 1 auto;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+    }
+    &__list {
+        @include reset-list;
+        display: flex;
+        margin-left: -13px;
+        @include width-768 {
+            flex-wrap: wrap;
+
+        }
+    }
+    &__label {
+        cursor: pointer;
+    }
+    &__text {
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+        padding: 5px 10px 7px 30px;
+        white-space: nowrap;
+        text-transform: lowercase;
+        &:before {
+            content: '';
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 2px solid #9b9b9b;
+            top: 50%;
+            left: 14px;
+            position: absolute;
+            transform: translateY(-50%);
+            font-size: 11px;
+        }
+    }
+    &__item {
+        margin-right: 4px;
+        @include width-768 {
+            margin: 10px;
+        }
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked ~ .additional-services__text {
+        background: #a44d47;
+        color: #fff;
+        &:before {
+            content: "\e91c";
+            font-family: IconFont;
+            color: #fff;
+            border: 0;
+            width: auto;
+            height: auto;
+            left: 11px;
+        }
+    }
+
+}

@@ -4,12 +4,38 @@ $(window).load(function(){
 	} else{
 		$('body').addClass('web');
 	};
+
 	$('body').removeClass('loaded');
 	$('.background-slider').slick({
 		autoplay: true,
 		arrows: false,
 		fade: true
 	});
+
+	$('.booking-form__date-input').datepicker();
+
+    $.widget( "custom.iconselectmenu", $.ui.selectmenu, {
+        _renderItem: function( ul, item ) {
+            var li = $( "<li>" ),
+                wrapper = $( "<div>", { text: item.label } );
+
+            if ( item.disabled ) {
+                li.addClass( "ui-state-disabled" );
+            }
+
+            $( "<span>", {
+                style: item.element.attr( "data-style" ),
+                "class": "ui-icon " + item.element.attr( "data-class" )
+            })
+                .appendTo( wrapper );
+
+            return li.append( wrapper ).appendTo( ul );
+        }
+    });
+    $( ".booking-form__select" )
+        .iconselectmenu()
+        .iconselectmenu( "menuWidget" )
+        .addClass( "ui-menu-icons customicons" );
 });
 /* viewport width */
 function viewport(){

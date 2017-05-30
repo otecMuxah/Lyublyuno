@@ -1,16 +1,31 @@
 .navigation {
+    margin-left: -60px;
+    @include width-1310 {
+        margin-left: 0;
+    }
     &__list {
         @include reset-list;
         display: flex;
+        @include width-768 {
+            flex-direction: column;
+            padding-top: 30px;
+
+        }
     }
     &__item {
-        margin-right: 28px;
+        margin-right: 29px;
         &:last-child {
             margin-right: 0;
+        }
+        @include width-768 {
+            margin-bottom: 15px;
         }
     }
     &__link {
         color: $text-color;
         font-size: 18px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

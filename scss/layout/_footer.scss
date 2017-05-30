@@ -13,6 +13,58 @@ footer{
 	order: 3;	
     -webkit-order: 3;	
 }
+.footer {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		@include wrapper-pref;
+		@include width-768 {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__phone {
+		font-size: 18px;
+		color: $text-color;
+		position: relative;
+		padding-left: 40px;
+		margin-right: 36px;
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		@include width-768 {
+			margin-bottom: 20px;
+		}
+		&_bold {
+			font-weight: 500;
+		}
+		&:before {
+			content: "\e926";
+			font-family: IconFont;
+			color: $text-color;
+			position: absolute;
+			left: 6px;
+			top: 7px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			left:0;
+			top: 1px;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 1px solid $text-color;
+		}
+	}
+	&__phone-social-holder {
+		display: flex;
+		@include width-768 {
+			flex-direction: column;
+		}
+	}
+
+}
 
 
 

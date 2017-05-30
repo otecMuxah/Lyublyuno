@@ -84,11 +84,29 @@
     line-height: $font-h;
     color:$font-c;
 }
+@mixin width-1310 {
+	@media screen and (max-width: 1310px) {
+		@content;
+	}
+}
+@mixin width-1015 {
+		@media screen and (max-width: 1015px) {
+		@content;
+	}
+}
+@mixin width-768 {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
 
 @mixin wrapper-pref() {
-	max-width: 1310px;
+	max-width: 1920px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 40px;
+	@include width-1310 {
+		padding: 0 20px;
+	}
 }
 
 @mixin reset-list() {

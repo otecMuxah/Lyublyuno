@@ -1,0 +1,43 @@
+.social {
+    display: flex;
+    @include reset-list;
+    &__item {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        width: 32px;
+        height: 32px;
+        border: 1px solid $text-color;
+        position: relative;
+        font-size: 0;
+        display: block;
+        transition: 0.2s;
+        &_facbook:before,
+        &_VK:before,
+        &_instagram:before
+            {
+                content: "\e91e";
+                position: absolute;
+                font-family: IconFont;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: $text-color;
+                font-size: 20px;
+
+            }
+        &_VK:before {
+            content: "\e927";
+        }
+        &_instagram:before {
+            content: "\e922";
+        }
+        &:hover {
+            background: #fff;
+            transition: 0.2s;
+        }
+    }
+}

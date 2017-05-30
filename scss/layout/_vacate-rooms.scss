@@ -2,41 +2,45 @@
     @include reset-list;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     &__item {
-        flex: 0 0 180px;
+        flex: 0 0 30%;
         display: flex;
         flex-direction: column;
-        margin: 0 0 10px;
+        margin: 0 20px 22px 0;
+        @include width-1015 {
+            flex: 1 1 30%;
+        }
     }
     &__link {
-        background: url(../img/room.jpg) no-repeat;
-        background-size: cover;
-        width: 180px;
-        height: 100px;
+        width: 100%;
+        height: auto;
         display: block;
-        margin: 0 0 10px;
+        margin: 0 0 14px;
+        @include width-1015 {
+
+        }
 
     }
     &__room-size {
         position: relative;
-        align-self: flex-end;
-        padding-left: 40px;
+        padding-left: 44px;
         &:before {
             content: "\e923";
             font-family: IconFont;
             color: $text-color;
             position: absolute;
-            top: 0;
+            top: -5px;
             left: 0;
+            font-size: 23px;
         }
         &:after {
-            content: "- \e924";
+            content: "-\e924";
             font-family: IconFont;
             color: $text-color;
             position: absolute;
-            top: 0;
+            top: -5px;
             left: 12px;
+            font-size: 23px;
         }
     }
 }

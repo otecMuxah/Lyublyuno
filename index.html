@@ -8,6 +8,9 @@
     <meta name='description' content=""/>
     <meta name="keywords" content=""/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body class="loaded">
@@ -21,7 +24,7 @@
     <!-- BEGIN HEADER -->
 
     <header class="header">
-        <div class="wrapper header__wrapper">
+        <div class=" header__wrapper">
             <a href="/" class="header__logo"></a>
             <nav class="navigation">
                 <ul class="navigation__list">
@@ -35,7 +38,7 @@
                 <div class="language-switch">
                     <ul class="language-switch__list">
                         <li class="language-switch__item"><a href="#" class="language-switch__link">Ru</a></li>
-                        <li class="language-switch__item"><a href="#" class="language-switch__link">En</a></li>
+                        <li class="language-switch__item"><a href="#" class="language-switch__link active">En</a></li>
                         <li class="language-switch__item"><a href="#" class="language-switch__link">Ch</a></li>
                     </ul>
                 </div>
@@ -60,7 +63,7 @@
     <!-- BEGIN CONTENT -->
 
     <main class="content">
-        <div class="wrapper content__wrapper">
+        <div class=" content__wrapper">
             <div class="content__left-side">
                 <article class="main-article">
                     <p>Онлайн бронирование номеров в отеле «Люблю-Но» - простота и комфорт. С помощью приведенной формы
@@ -74,57 +77,73 @@
 
                     <h2>Свободные номера подходящие вашим критериям</h2>
                     <ul class="vacate-rooms">
-                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
-                            <span class="vacate-rooms__room-size">(эконом)</span></li>
-                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
-                            <span class="vacate-rooms__room-size">(эконом)</span></li>
-                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
-                            <span class="vacate-rooms__room-size">(эконом)</span></li>
-                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
-                            <span class="vacate-rooms__room-size">(эконом)</span></li>
-                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
-                            <span class="vacate-rooms__room-size">(эконом)</span></li>
-                        <li class="vacate-rooms__item"><a href="#" class="vacate-rooms__link"></a>
-                            <span class="vacate-rooms__room-size">(эконом)</span></li>
+                        <li class="vacate-rooms__item">
+                            <img src="img/room.jpg" alt="room" class="vacate-rooms__link">
+                            <span class="vacate-rooms__room-size">(эконом)</span>
+                        </li>
+                        <li class="vacate-rooms__item">
+                            <img src="img/room.jpg" alt="room" class="vacate-rooms__link">
+                            <span class="vacate-rooms__room-size">(эконом)</span>
+                        </li>
+                        <li class="vacate-rooms__item">
+                            <img src="img/room.jpg" alt="room" class="vacate-rooms__link">
+                            <span class="vacate-rooms__room-size">(эконом)</span>
+                        </li>
+                        <li class="vacate-rooms__item">
+                            <img src="img/room.jpg" alt="room" class="vacate-rooms__link">
+                            <span class="vacate-rooms__room-size">(эконом)</span>
+                        </li>
+                        <li class="vacate-rooms__item">
+                            <img src="img/room.jpg" alt="room" class="vacate-rooms__link">
+                            <span class="vacate-rooms__room-size">(эконом)</span>
+                        </li>
+                        <li class="vacate-rooms__item">
+                            <img src="img/room.jpg" alt="room" class="vacate-rooms__link">
+                            <span class="vacate-rooms__room-size">(эконом)</span>
+                        </li>
                     </ul>
                 </article>
             </div>
-            <form class="content__right-side booking-form" m>
-                <label for="roomSize" class="booking-form__label">
+            <form class="content__right-side booking-form">
+                <label for="roomSize" class="booking-form__label booking-form__label_roomsize">
                     <span class="booking-form__title">Тип номера</span>
                     <select name="" id="roomSize" class="booking-form__select">
-                        <option value="1">Эконом</option>
-                        <option value="2">Люкс</option>
+                        <option value="1" data-class="people3">(эконом)</option>
+                        <option value="2" data-class="people4">(люкс)</option>
                     </select>
                 </label>
-                <label for="adultsNum" class="booking-form__label number-of-people">
-                    <span class="booking-form__title">Взрослые</span>
-                    <select name="" id="adultsNum" class="booking-form__select">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </label>
-                <label for="childrenNum" class="booking-form__label number-of-people">
-                    <span class="booking-form__title">Дети</span>
-                    <select name="" id="childrenNum" class="booking-form__select">
-                        <option value="1">0</option>
-                        <option value="2">1</option>
-                    </select>
-                </label>
-                <label for="arriveDate" class="booking-form__label date-input">
-                    <span class="booking-form__title">Заезд</span>
-                    <input type="date" id="arriveDate" class="booking-form__date-input">
-                </label>
-                <label for="checkoutDate" class="booking-form__label date-input">
-                    <span class="booking-form__title">Отъезд</span>
-                    <input type="date" id="checkoutDate" class="booking-form__date-input">
-                </label>
-                <label for="emailInput" class="booking-form__label">
-                    <span class="booking-form__title">Отъезд</span>
+                <div class="booking-form__small-label-holder">
+                    <label for="adultsNum" class="booking-form__label number-of-people">
+                        <span class="booking-form__title">Взрослые</span>
+                        <select name="" id="adultsNum" class="booking-form__select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </label>
+                    <label for="childrenNum" class="booking-form__label number-of-people">
+                        <span class="booking-form__title">Дети</span>
+                        <select name="" id="childrenNum" class="booking-form__select">
+                            <option value="1">0</option>
+                            <option value="2">1</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="booking-form__small-label-holder">
+                    <label for="arriveDate" class="booking-form__label date-input">
+                        <span class="booking-form__title">Заезд</span>
+                        <input type="text" id="arriveDate" class="booking-form__date-input">
+                    </label>
+                    <label for="checkoutDate" class="booking-form__label date-input">
+                        <span class="booking-form__title">Отъезд</span>
+                        <input type="text" id="checkoutDate" class="booking-form__date-input">
+                    </label>
+                </div>
+                <label for="emailInput" class="booking-form__label text-input">
+                    <span class="booking-form__title">E-mail</span>
                     <input type="email" id="emailInput" class="booking-form__text-input">
                 </label>
-                <label for="phoneInput" class="booking-form__label">
-                    <span class="booking-form__title">Отъезд</span>
+                <label for="phoneInput" class="booking-form__label text-input">
+                    <span class="booking-form__title">Телефон</span>
                     <input type="text" id="phoneInput" class="booking-form__text-input">
                 </label>
                 <label for="phoneInput" class="booking-form__label additional-services">
@@ -149,8 +168,8 @@
                     </ul>
                 </label>
                 <div class="booking-form__result">
-                    <span class="booking-form__title">Итого</span>
-                    <span class="booking-form__summ">26 400 р.</span>
+                    <span class="booking-form__title">Итого: </span>
+                    <span class="booking-form__summ">26400 р.</span>
                 </div>
                 <button class="booking-form__submit" type="submit">Заказать</button>
             </form>
@@ -162,10 +181,17 @@
     <!-- BEGIN FOOTER -->
 
     <footer class="footer">
-        <div class="wrapper footer__wrapper">
-            <a href="tel:+7(495)3510303" class="footer__phone">+7 (495) 351-03-03</a>
+        <div class="footer__wrapper">
+            <div class="footer__phone-social-holder">
+                <a href="tel:+7(495)3510303" class="footer__phone">+7 (495) <span class="footer__phone_bold">351-03-03</span></a>
+                <ul class="footer__social social">
+                    <li class="social__item"><a href="#" class="social__link social__link_facbook">Facebook</a></li>
+                    <li class="social__item"><a href="#" class="social__link social__link_VK">VK</a></li>
+                    <li class="social__item"><a href="#" class="social__link social__link_instagram">Instagram</a></li>
+                </ul>
+            </div>
             <ul class="about-us">
-                <li class="about-us__item"><a href="#" class="about-us__link">О нас</a></li>
+                <li class="about-us__item"><a href="#" class="about-us__link">О сайте</a></li>
                 <li class="about-us__item"><a href="#" class="about-us__link">Группа компаний «Вест»</a></li>
             </ul>
         </div>
@@ -175,6 +201,7 @@
 
 </div>
 
+    <!--Slider background-->
 <div class="background-slider-wrapper">
     <div class="background-slider">
         <div class="background-slider__slide">
@@ -193,9 +220,11 @@
 
 <!-- BODY EOF   -->
 
+
 <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
 <script type="text/javascript" src="js/components/slick.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <!--
 <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
 <script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>

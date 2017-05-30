@@ -1,0 +1,18 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    padding: 9px 6px 0 0;
+    @include reset-list;
+    @include width-768 {
+        margin-top: 15px;
+    }
+
+    &__item {
+        margin-left: 15px;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: 300;
+        color: $text-color;
+    }
+}
