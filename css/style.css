@@ -816,7 +816,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 4px;
-  max-width: 495px; }
+  max-width: 100%; }
   @media screen and (max-width: 1310px) {
     .booking-form {
       max-width: 300px; } }
