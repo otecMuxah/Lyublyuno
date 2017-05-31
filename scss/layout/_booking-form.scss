@@ -79,48 +79,93 @@
             margin-bottom: 20px;
         }
     }
-    &__select {
-        width: 210px;
-        height: 45px;
-        background: #fff;
-    }
+
     &__small-label-holder {
         display: flex;
         @include width-1310 {
             flex-direction: column;
         }
     }
-    #roomSize-button {
+
+    .jq-selectbox__dropdown {
+        width: 100%;
+    }
+    .jq-selectbox ul {
+        background: #fff;
+        border: 1px solid $color-gray-2;
+    }
+    .jq-selectbox__trigger {
+        position: absolute;
+        right: 16px;
+        top: 34%;
+
+    }
+
+    .jq-selectbox__trigger-arrow {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 1px $text-color solid;
+            border-right: 1px $text-color solid;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            @include width-1310 {
+                left: 2px;
+            }
+
+        }
+    }
+    .jq-selectbox li {
+        padding: 15px 10px 15px 80px;
+    }
+    .jq-selectbox li.people3,
+    .jq-selectbox li.people4
+    {
+        position: relative;
+        &:before {
+            content: "\e923";
+            font-family: IconFont;
+            color: $text-color;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            font-size: 31px;
+        }
+        &:after {
+            content: "-\e924";
+            font-family: IconFont;
+            color: $text-color;
+            position: absolute;
+            top: 5px;
+            left: 21px;
+            font-size: 31px;
+
+        }
+    }
+    .jq-selectbox li.people4 {
+        &:after {
+            content: "-\e925";
+        }
+    }
+    .jq-selectbox__select {
         width: 210px;
         height: 45px;
         padding-left: 8px;
         padding-right: 9px;
         background: #fff;
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        border-color: $color-gray-2;
+        border: 1px solid $color-gray-2;
         @include width-1310 {
             width: 185px;
         }
     }
-    #adultsNum-button,
-    #childrenNum-button {
-        height: 34px;
-        width: 61px;
-        background: #fff;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 8px;
-        font-size: 16px;
-        border-color: $color-gray-2;
-        .ui-selectmenu-text {
-            margin: 0 0 0 4px;
-        }
-    }
+
     .number-of-people {
         margin-right: 28px;
         &:last-child {
@@ -135,49 +180,12 @@
                 }
             }
         }
-    }
-    .ui-icon-triangle-1-s {
-        position: relative;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 5px;
-            border-bottom: 1px $text-color solid;
-            border-right: 1px $text-color solid;
-            width: 8px;
-            height: 8px;
-            transform: rotate(45deg);
-            @include width-1310 {
-                left: 2px;
-            }
-
+        .jq-selectbox__select {
+            height: 34px;
+            width: 61px;
         }
-    }
-    .booking-form__label_roomsize {
-        .ui-selectmenu-text {
-            position: relative;
-            padding-left: 64px;
-            overflow: visible;
-            font-size: 18px;
-            &:before {
-                content: "\e923";
-                font-family: IconFont;
-                color: $text-color;
-                position: absolute;
-                top: -6px;
-                left: 0;
-                font-size: 31px;
-            }
-            &:after {
-                content: "-\e924";
-                font-family: IconFont;
-                color: $text-color;
-                position: absolute;
-                top: -6px;
-                left: 18px;
-                font-size: 31px;
-            }
+        .jq-selectbox li {
+            padding: 15px;
         }
     }
     &__result {
@@ -205,11 +213,3 @@
     }
 }
 
-.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
-    padding: 0.5em 0 0.5em 3em;
-}
-.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
-    height: 24px;
-    width: 24px;
-    top: 0.1em;
-}

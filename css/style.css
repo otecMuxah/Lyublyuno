@@ -414,8 +414,8 @@ header {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin-right: 57px;
-    -ms-flex-preferred-size: 18%;
-        flex-basis: 18%; }
+    -ms-flex-preferred-size: 206px;
+        flex-basis: 206px; }
     @media screen and (max-width: 1310px) {
       .header__logo {
         margin-right: 10px; } }
@@ -468,7 +468,12 @@ header {
     .header__nav-holder_active {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      border: 1px solid #b7b6b4;
+      border-radius: 5px;
+      margin: 0 10px;
+      padding: 0 10px;
+      width: 90%; }
       @media screen and (max-width: 768px) {
         .header__nav-holder_active {
           -webkit-box-orient: vertical;
@@ -894,10 +899,6 @@ footer {
     margin-top: 3px; }
     .booking-form .text-input:last-child {
       margin-bottom: 20px; }
-  .booking-form__select {
-    width: 210px;
-    height: 45px;
-    background: #fff; }
   .booking-form__small-label-holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -908,7 +909,57 @@ footer {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
-  .booking-form #roomSize-button {
+  .booking-form .jq-selectbox__dropdown {
+    width: 100%; }
+  .booking-form .jq-selectbox ul {
+    background: #fff;
+    border: 1px solid #9d9d9d; }
+  .booking-form .jq-selectbox__trigger {
+    position: absolute;
+    right: 16px;
+    top: 34%; }
+  .booking-form .jq-selectbox__trigger-arrow {
+    position: relative; }
+    .booking-form .jq-selectbox__trigger-arrow:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 1px #333 solid;
+      border-right: 1px #333 solid;
+      width: 8px;
+      height: 8px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+      @media screen and (max-width: 1310px) {
+        .booking-form .jq-selectbox__trigger-arrow:before {
+          left: 2px; } }
+  .booking-form .jq-selectbox li {
+    padding: 15px 10px 15px 80px; }
+  .booking-form .jq-selectbox li.people3,
+  .booking-form .jq-selectbox li.people4 {
+    position: relative; }
+    .booking-form .jq-selectbox li.people3:before,
+    .booking-form .jq-selectbox li.people4:before {
+      content: "\e923";
+      font-family: IconFont;
+      color: #333;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      font-size: 31px; }
+    .booking-form .jq-selectbox li.people3:after,
+    .booking-form .jq-selectbox li.people4:after {
+      content: "-\e924";
+      font-family: IconFont;
+      color: #333;
+      position: absolute;
+      top: 5px;
+      left: 21px;
+      font-size: 31px; }
+  .booking-form .jq-selectbox li.people4:after {
+    content: "-\e925"; }
+  .booking-form .jq-selectbox__select {
     width: 210px;
     height: 45px;
     padding-left: 8px;
@@ -917,44 +968,16 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-color: #9d9d9d; }
+    border: 1px solid #9d9d9d; }
     @media screen and (max-width: 1310px) {
-      .booking-form #roomSize-button {
+      .booking-form .jq-selectbox__select {
         width: 185px; } }
-  .booking-form #adultsNum-button,
-  .booking-form #childrenNum-button {
-    height: 34px;
-    width: 61px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 8px;
-    font-size: 16px;
-    border-color: #9d9d9d; }
-    .booking-form #adultsNum-button .ui-selectmenu-text,
-    .booking-form #childrenNum-button .ui-selectmenu-text {
-      margin: 0 0 0 4px; }
   .booking-form .number-of-people {
     margin-right: 28px; }
     .booking-form .number-of-people:last-child .booking-form__title {
@@ -970,43 +993,11 @@ footer {
               -ms-flex: 0 0 112px;
                   flex: 0 0 112px;
           margin-right: 0; } }
-  .booking-form .ui-icon-triangle-1-s {
-    position: relative; }
-    .booking-form .ui-icon-triangle-1-s:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 5px;
-      border-bottom: 1px #333 solid;
-      border-right: 1px #333 solid;
-      width: 8px;
-      height: 8px;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
-      @media screen and (max-width: 1310px) {
-        .booking-form .ui-icon-triangle-1-s:before {
-          left: 2px; } }
-  .booking-form .booking-form__label_roomsize .ui-selectmenu-text {
-    position: relative;
-    padding-left: 64px;
-    overflow: visible;
-    font-size: 18px; }
-    .booking-form .booking-form__label_roomsize .ui-selectmenu-text:before {
-      content: "\e923";
-      font-family: IconFont;
-      color: #333;
-      position: absolute;
-      top: -6px;
-      left: 0;
-      font-size: 31px; }
-    .booking-form .booking-form__label_roomsize .ui-selectmenu-text:after {
-      content: "-\e924";
-      font-family: IconFont;
-      color: #333;
-      position: absolute;
-      top: -6px;
-      left: 18px;
-      font-size: 31px; }
+    .booking-form .number-of-people .jq-selectbox__select {
+      height: 34px;
+      width: 61px; }
+    .booking-form .number-of-people .jq-selectbox li {
+      padding: 15px; }
   .booking-form__result {
     margin-bottom: 19px; }
   .booking-form__summ {
@@ -1027,14 +1018,6 @@ footer {
     .booking-form__submit:hover {
       background: red;
       transition: 0.2s; }
-
-.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
-  padding: 0.5em 0 0.5em 3em; }
-
-.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
-  height: 24px;
-  width: 24px;
-  top: 0.1em; }
 
 .additional-services {
   display: -webkit-box;
