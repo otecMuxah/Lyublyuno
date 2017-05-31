@@ -2,13 +2,23 @@
     @include reset-list;
     display: flex;
     flex-wrap: wrap;
+    @include width-1015 {
+        justify-content: space-between;
+    }
     &__item {
         flex: 0 0 30%;
         display: flex;
         flex-direction: column;
         margin: 0 20px 22px 0;
+        &:nth-child(3n) {
+            margin: 0 0 22px;
+        }
         @include width-1015 {
-            flex: 1 1 30%;
+            flex: 0 0 30%;
+            margin: 0 0 22px;
+        }
+        @include width-550 {
+            flex: 0 0 47%;
         }
     }
     &__link {

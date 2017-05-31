@@ -1,5 +1,8 @@
 .language-switch {
     margin-right: 43px;
+    @include width-1310 {
+        margin-right: 15px;
+    }
     &__list {
         @include reset-list;
         display: flex;

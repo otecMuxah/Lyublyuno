@@ -14,7 +14,7 @@ header{
 }
 
 .header {
-	margin-bottom: 30px;
+	margin-bottom: 41px;
 	height: auto;
 	&__wrapper {
 		@include wrapper-pref;
@@ -22,8 +22,9 @@ header{
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 20px;
+		position: relative;
 		@include width-1310 {
-			flex-wrap: wrap;
+			padding-top: 20px;
 		}
 	}
 	&__logo {
@@ -31,13 +32,69 @@ header{
 		width: 206px;
 		height: 49px;
 		display: block;
+		flex-shrink: 0;
+		margin-right: 57px;
+		flex-basis: 18%;
 		@include width-1310 {
-			flex-basis: 100%;
+			margin-right: 10px;
 		}
+		@include width-768 {
+			flex-basis: 50%;
+		}
+	}
+	&__hamburger {
+		position: relative;
+		background: none;
+		border: 0;
+		width: 30px;
+		height: 30px;
+		display: none;
+		&:before {
+			content: "\e929";
+			font-family: IconFont;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 30px;
+			font-size: 24px;
+		}
+		@include width-1015 {
+			display: flex;
+		}
+	}
+	&__nav-holder {
+		display: flex;
+		flex: 0 0 80%;
+		justify-content: space-between;
+
+		@include width-1015 {
+			display: none;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translateY(30%);
+			width: 100%;
+			z-index: 3;
+		}
+		&_active {
+			display: flex;
+			@include width-768 {
+				flex-direction: column;
+			}
+		}
+
 	}
 	&__inner-wrapper {
 		display: flex;
 		align-items: center;
+		@include width-768{
+			order: 0;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
 	}
 
 }

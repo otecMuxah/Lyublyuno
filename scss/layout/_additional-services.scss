@@ -13,7 +13,7 @@
         @include reset-list;
         display: flex;
         margin-left: -13px;
-        @include width-768 {
+        @include width-1310 {
             flex-wrap: wrap;
 
         }
@@ -24,7 +24,7 @@
     &__text {
         position: relative;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         color: $text-color;
         padding: 5px 10px 7px 30px;
         white-space: nowrap;
@@ -44,7 +44,7 @@
     }
     &__item {
         margin-right: 4px;
-        @include width-768 {
+        @include width-1310 {
             margin: 10px;
         }
     }

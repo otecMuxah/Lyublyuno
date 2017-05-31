@@ -99,6 +99,11 @@
 		@content;
 	}
 }
+@mixin width-550 {
+	@media screen and (max-width: 550px) {
+		@content;
+	}
+}
 
 @mixin wrapper-pref() {
 	max-width: 1920px;

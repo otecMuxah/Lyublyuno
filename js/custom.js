@@ -36,6 +36,10 @@ $(window).load(function(){
         .iconselectmenu()
         .iconselectmenu( "menuWidget" )
         .addClass( "ui-menu-icons customicons" );
+    $('.header__hamburger').on('click', function () {
+		$('.header__nav-holder').toggleClass('header__nav-holder_active')
+
+    })
 });
 /* viewport width */
 function viewport(){

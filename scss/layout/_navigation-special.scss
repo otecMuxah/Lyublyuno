@@ -3,9 +3,12 @@
     &__list {
         @include reset-list;
         display: flex;
-        @include width-768 {
+        @include width-1015 {
             flex-direction: column;
             align-items: flex-end;
+        }
+        @include width-768 {
+            align-items: flex-start;
         }
     }
     &__link {
@@ -20,7 +23,10 @@
         &:last-child {
             margin-right: 0;
         }
-        @include width-768 {
+        @include width-1310 {
+            margin-right: 6px;
+        }
+        @include width-1015 {
             margin: 0 0 15px;
         }
 
