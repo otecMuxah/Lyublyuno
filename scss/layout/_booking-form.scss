@@ -1,4 +1,4 @@
-.booking-form {
+.form-control {
     display: flex;
     flex-direction: column;
     margin-top: 4px;
@@ -47,7 +47,7 @@
             width: 100%;
         }
         &:last-child {
-            .booking-form__title {
+            .form-control__title {
                 width: auto;
                 flex: 1 1 auto;
                 margin-right: 27px;
@@ -187,7 +187,7 @@
     .number-of-people {
         margin-right: 28px;
         &:last-child {
-            .booking-form__title {
+            .form-control__title {
                 width: auto;
                 flex: 1 1 auto;
                 margin-right: 21px;

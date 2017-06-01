@@ -84,6 +84,7 @@ h3{
 	&__wrapper {
 		@include wrapper-pref;
 		display: flex;
+		justify-content: space-between;
 		@include width-768 {
 			flex-direction: column;
 			align-items: center;
@@ -98,9 +99,9 @@ h3{
 		}
 	}
 	&__left-side {
-		margin-right: 73px;
+		//margin-right: 73px;
 		@include width-1310 {
-			flex: 1 1 70%;
+			//flex: 1 1 70%;
 		}
 		@include width-768 {
 			margin: 0 0 20px;
@@ -108,7 +109,7 @@ h3{
 	}
 	&__right-side {
 		@include width-1310 {
-			flex: 1 1 30%;
+			//flex: 1 1 30%;
 		}
 	}
 }
