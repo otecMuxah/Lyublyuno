@@ -6,22 +6,36 @@ $(window).load(function(){
 	};
 
 	$('body').removeClass('loaded');
-	$('.background-slider').slick({
-		autoplay: true,
-		arrows: false,
-		fade: true
-	});
-	if($('.booking-form__date-input').length) {
-        $('.booking-form__date-input').datepicker();
+
+	const $bgSlider = $('.background-slider'),
+		$dateInput = $('.booking-form__date-input'),
+		$select = $('.booking-form__select'),
+		$hamburger = $('.header__hamburger'),
+		$navHolder = $('.header__nav-holder');
+
+
+	if($bgSlider.length) {
+        $bgSlider.slick({
+            autoplay: true,
+            arrows: false,
+            fade: true
+        });
 	}
 
 
-    if($('.booking-form__select').length) {
-        $('.booking-form__select').styler();
+
+	if($dateInput.length) {
+        $($dateInput.datepicker());
+	}
+
+
+    if($select.length) {
+        $select.styler();
     }
 
-    $('.header__hamburger').on('click', function () {
-		$('.header__nav-holder').toggleClass('header__nav-holder_active')
+
+    $hamburger.on('click', function () {
+        $navHolder.toggleClass('header__nav-holder_active')
 
     })
 });

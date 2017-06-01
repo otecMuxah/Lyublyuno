@@ -332,6 +332,8 @@ h3 {
     @media screen and (max-width: 1310px) {
       .content__wrapper {
         padding: 0 20px; } }
+    .content__wrapper:after {
+      display: none; }
     @media screen and (max-width: 768px) {
       .content__wrapper {
         -webkit-box-orient: vertical;
@@ -403,6 +405,8 @@ header {
     @media screen and (max-width: 1310px) {
       .header__wrapper {
         padding: 0 20px; } }
+    .header__wrapper:after {
+      display: none; }
     @media screen and (max-width: 1310px) {
       .header__wrapper {
         padding-top: 20px; } }
@@ -419,10 +423,6 @@ header {
     @media screen and (max-width: 1310px) {
       .header__logo {
         margin-right: 10px; } }
-    @media screen and (max-width: 768px) {
-      .header__logo {
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; } }
   .header__hamburger {
     position: relative;
     background: none;
@@ -532,6 +532,8 @@ footer {
     @media screen and (max-width: 1310px) {
       .footer__wrapper {
         padding: 0 20px; } }
+    .footer__wrapper:after {
+      display: none; }
     @media screen and (max-width: 768px) {
       .footer__wrapper {
         -webkit-box-orient: vertical;
@@ -744,7 +746,8 @@ footer {
   font-size: 16px;
   padding: 5px 0 0;
   letter-spacing: -0.3px;
-  margin-bottom: 11px; }
+  margin-bottom: 11px;
+  line-height: 18px; }
 
 .main-article__phone {
   white-space: nowrap; }
@@ -823,9 +826,6 @@ footer {
           flex-direction: column;
   margin-top: 4px;
   max-width: 100%; }
-  @media screen and (max-width: 1310px) {
-    .booking-form {
-      max-width: 300px; } }
   @media screen and (max-width: 768px) {
     .booking-form {
       max-width: 100%; } }
@@ -949,7 +949,7 @@ footer {
       top: 6px;
       left: 6px;
       font-size: 31px;
-      z-index: 2; }
+      z-index: 3; }
     .booking-form .jq-selectbox .people3:after,
     .booking-form .jq-selectbox.people3 .jq-selectbox__select:after {
       content: "-\e924";
@@ -971,7 +971,7 @@ footer {
       top: 6px;
       left: 6px;
       font-size: 31px;
-      z-index: 2; }
+      z-index: 3; }
     .booking-form .jq-selectbox .people4:after,
     .booking-form .jq-selectbox.people4 .jq-selectbox__select:after {
       content: "-\e925";
@@ -1161,7 +1161,8 @@ footer {
       color: #333;
       font-size: 17px; }
     .social__link_VK:before {
-      content: "\e927"; }
+      content: "\e927";
+      font-size: 15px; }
     .social__link_instagram:before {
       content: "\e922"; }
     .social__link:hover {

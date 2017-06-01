@@ -4,7 +4,7 @@
     margin-top: 4px;
     max-width: 100%;
     @include width-1310 {
-        max-width: 300px;
+
     }
     @include width-768 {
         max-width: 100%;
@@ -133,7 +133,7 @@
             top: 6px;
             left: 6px;
             font-size: 31px;
-            z-index: 2;
+            z-index: 3;
         }
         &:after {
             content: "-\e924";
@@ -157,7 +157,7 @@
             top: 6px;
             left: 6px;
             font-size: 31px;
-            z-index: 2;
+            z-index: 3;
         }
         &:after {
             content: "-\e925";

@@ -112,6 +112,9 @@
 	@include width-1310 {
 		padding: 0 20px;
 	}
+	&:after {
+		display: none;
+	}
 }
 
 @mixin reset-list() {
