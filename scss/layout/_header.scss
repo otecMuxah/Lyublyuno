@@ -85,6 +85,7 @@ header{
 			margin: 0 10px;
 			padding: 0 10px;
 			width: 90%;
+			z-index: 101;
 			@include width-768 {
 				flex-direction: column;
 			}

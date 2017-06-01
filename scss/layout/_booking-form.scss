@@ -123,7 +123,7 @@
         padding: 15px 10px 15px 80px;
     }
     .jq-selectbox .people3,
-    .jq-selectbox.people3 {
+    .jq-selectbox.people3 .jq-selectbox__select {
         position: relative;
         &:before {
             content: "\e923";
@@ -147,7 +147,7 @@
         }
     }
     .jq-selectbox .people4,
-    .jq-selectbox.people4 {
+    .jq-selectbox.people4 .jq-selectbox__select {
         position: relative;
         &:before {
             content: "\e923";

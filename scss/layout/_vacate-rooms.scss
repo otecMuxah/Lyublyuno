@@ -20,15 +20,18 @@
         @include width-550 {
             flex: 0 0 47%;
         }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 0 14px;
+            @include width-1015 {
+
+            }
+        }
     }
     &__link {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 0 14px;
-        @include width-1015 {
 
-        }
 
     }
     &__room-size {

@@ -473,7 +473,8 @@ header {
       border-radius: 5px;
       margin: 0 10px;
       padding: 0 10px;
-      width: 90%; }
+      width: 90%;
+      z-index: 101; }
       @media screen and (max-width: 768px) {
         .header__nav-holder_active {
           -webkit-box-orient: vertical;
@@ -787,11 +788,11 @@ footer {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 47%;
                 flex: 0 0 47%; } }
-  .vacate-rooms__link {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 0 14px; }
+    .vacate-rooms__item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 0 14px; }
   .vacate-rooms__room-size {
     position: relative;
     padding-left: 44px; }
@@ -937,10 +938,10 @@ footer {
   .booking-form .jq-selectbox li {
     padding: 15px 10px 15px 80px; }
   .booking-form .jq-selectbox .people3,
-  .booking-form .jq-selectbox.people3 {
+  .booking-form .jq-selectbox.people3 .jq-selectbox__select {
     position: relative; }
     .booking-form .jq-selectbox .people3:before,
-    .booking-form .jq-selectbox.people3:before {
+    .booking-form .jq-selectbox.people3 .jq-selectbox__select:before {
       content: "\e923";
       font-family: IconFont;
       color: #333;
@@ -950,7 +951,7 @@ footer {
       font-size: 31px;
       z-index: 2; }
     .booking-form .jq-selectbox .people3:after,
-    .booking-form .jq-selectbox.people3:after {
+    .booking-form .jq-selectbox.people3 .jq-selectbox__select:after {
       content: "-\e924";
       font-family: IconFont;
       color: #333;
@@ -959,10 +960,10 @@ footer {
       left: 21px;
       font-size: 31px; }
   .booking-form .jq-selectbox .people4,
-  .booking-form .jq-selectbox.people4 {
+  .booking-form .jq-selectbox.people4 .jq-selectbox__select {
     position: relative; }
     .booking-form .jq-selectbox .people4:before,
-    .booking-form .jq-selectbox.people4:before {
+    .booking-form .jq-selectbox.people4 .jq-selectbox__select:before {
       content: "\e923";
       font-family: IconFont;
       color: #333;
@@ -972,7 +973,7 @@ footer {
       font-size: 31px;
       z-index: 2; }
     .booking-form .jq-selectbox .people4:after,
-    .booking-form .jq-selectbox.people4:after {
+    .booking-form .jq-selectbox.people4 .jq-selectbox__select:after {
       content: "-\e925";
       font-family: IconFont;
       color: #333;

@@ -23,47 +23,6 @@
 <div class="main-wrapper">
 
 
-    <!-- BEGIN HEADER -->
-
-    <header class="header">
-        <div class=" header__wrapper">
-            <a href="/" class="header__logo"></a>
-            <button class="header__hamburger"></button>
-            <div class="header__nav-holder">
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">Об отеле</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Номера</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Правила проживания</a></li>
-                    </ul>
-                </nav>
-                <div class="header__inner-wrapper">
-                    <div class="language-switch">
-                        <ul class="language-switch__list">
-                            <li class="language-switch__item"><a href="#" class="language-switch__link">Ru</a></li>
-                            <li class="language-switch__item"><a href="#" class="language-switch__link active">En</a></li>
-                            <li class="language-switch__item"><a href="#" class="language-switch__link">Ch</a></li>
-                        </ul>
-                    </div>
-                    <nav class="navigation-special">
-                        <ul class="navigation-special__list">
-                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Отзывы</a>
-                            </li>
-                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Новости</a>
-                            </li>
-                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Услуги</a>
-                            </li>
-                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Спецпредложения</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- HEADER EOF   -->
 
     <!-- BEGIN CONTENT -->
 
@@ -111,47 +70,47 @@
             </div>
             <div class="content__right-side">
                 <form class="booking-form">
-                    <label for="roomSize" class="booking-form__label booking-form__label_roomsize">
-                        <span class="booking-form__title">Тип номера</span>
+                    <div class="booking-form__label booking-form__label_roomsize">
+                        <label  for="roomSize" class="booking-form__title">Тип номера</label>
                         <select name="" id="roomSize" class="booking-form__select">
                             <option value="1" class="people3">(эконом)</option>
                             <option value="2" class="people4">(люкс)</option>
                         </select>
-                    </label>
+                    </div>
                     <div class="booking-form__small-label-holder">
-                        <label for="adultsNum" class="booking-form__label number-of-people">
-                            <span class="booking-form__title">Взрослые</span>
+                        <div  class="booking-form__label number-of-people">
+                            <label for="adultsNum" class="booking-form__title">Взрослые</label>
                             <select name="" id="adultsNum" class="booking-form__select">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                             </select>
-                        </label>
-                        <label for="childrenNum" class="booking-form__label number-of-people">
-                            <span class="booking-form__title">Дети</span>
+                        </div>
+                        <div  class="booking-form__label number-of-people">
+                            <label for="childrenNum" class="booking-form__title">Дети</label>
                             <select name="" id="childrenNum" class="booking-form__select">
                                 <option value="1">0</option>
                                 <option value="2">1</option>
                             </select>
-                        </label>
+                        </div>
                     </div>
                     <div class="booking-form__small-label-holder">
-                        <label for="arriveDate" class="booking-form__label date-input">
-                            <span class="booking-form__title">Заезд</span>
+                        <div  class="booking-form__label date-input">
+                            <label for="arriveDate" class="booking-form__title">Заезд</label>
                             <input type="text" id="arriveDate" class="booking-form__date-input">
-                        </label>
-                        <label for="checkoutDate" class="booking-form__label date-input">
-                            <span class="booking-form__title">Отъезд</span>
+                        </div>
+                        <div  class="booking-form__label date-input">
+                            <label for="checkoutDate" class="booking-form__title">Отъезд</label>
                             <input type="text" id="checkoutDate" class="booking-form__date-input">
-                        </label>
+                        </div>
                     </div>
-                    <label for="emailInput" class="booking-form__label text-input">
-                        <span class="booking-form__title">E-mail</span>
+                    <div  class="booking-form__label text-input">
+                        <label for="emailInput" class="booking-form__title">E-mail</label>
                         <input type="email" id="emailInput" class="booking-form__text-input">
-                    </label>
-                    <label for="phoneInput" class="booking-form__label text-input">
-                        <span class="booking-form__title">Телефон</span>
+                    </div>
+                    <div  class="booking-form__label text-input">
+                        <label for="phoneInput" class="booking-form__title">Телефон</label>
                         <input type="text" id="phoneInput" class="booking-form__text-input">
-                    </label>
+                    </div>
                     <div class="booking-form__label additional-services">
                         <span class="booking-form__title">Дополнитьельные услуги</span>
                         <ul class="additional-services__list">
@@ -186,6 +145,48 @@
 
     <!-- CONTENT EOF   -->
 
+    <!-- BEGIN HEADER -->
+
+    <header class="header">
+        <div class=" header__wrapper">
+            <a href="/" class="header__logo"></a>
+            <button class="header__hamburger"></button>
+            <div class="header__nav-holder">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link">Об отеле</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Номера</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Правила проживания</a></li>
+                    </ul>
+                </nav>
+                <div class="header__inner-wrapper">
+                    <div class="language-switch">
+                        <ul class="language-switch__list">
+                            <li class="language-switch__item"><a href="#" class="language-switch__link">Ru</a></li>
+                            <li class="language-switch__item"><a href="#" class="language-switch__link active">En</a></li>
+                            <li class="language-switch__item"><a href="#" class="language-switch__link">Ch</a></li>
+                        </ul>
+                    </div>
+                    <nav class="navigation-special">
+                        <ul class="navigation-special__list">
+                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Отзывы</a>
+                            </li>
+                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Новости</a>
+                            </li>
+                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Услуги</a>
+                            </li>
+                            <li class="navigation-special__item"><a href="#" class="navigation-special__link">Спецпредложения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER EOF   -->
+    
     <!-- BEGIN FOOTER -->
 
     <footer class="footer">
