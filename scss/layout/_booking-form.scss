@@ -123,10 +123,7 @@
         padding: 15px 10px 15px 80px;
     }
     .jq-selectbox .people3,
-    .jq-selectbox.people3,
-    .jq-selectbox .people4,
-    .jq-selectbox.people4,
-    {
+    .jq-selectbox.people3 {
         position: relative;
         &:before {
             content: "\e923";
@@ -136,6 +133,7 @@
             top: 6px;
             left: 6px;
             font-size: 31px;
+            z-index: 2;
         }
         &:after {
             content: "-\e924";
@@ -149,9 +147,26 @@
         }
     }
     .jq-selectbox .people4,
-    .jq-selectbox .people4 {
+    .jq-selectbox.people4 {
+        position: relative;
+        &:before {
+            content: "\e923";
+            font-family: IconFont;
+            color: $text-color;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            font-size: 31px;
+            z-index: 2;
+        }
         &:after {
-            content: "-\e925" !important;
+            content: "-\e925";
+            font-family: IconFont;
+            color: $text-color;
+            position: absolute;
+            top: 5px;
+            left: 21px;
+            font-size: 31px;
         }
     }
     .jq-selectbox__select {
