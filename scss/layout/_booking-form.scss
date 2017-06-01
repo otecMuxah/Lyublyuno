@@ -122,8 +122,10 @@
     .jq-selectbox li {
         padding: 15px 10px 15px 80px;
     }
-    .jq-selectbox li.people3,
-    .jq-selectbox li.people4
+    .jq-selectbox .people3,
+    .jq-selectbox.people3,
+    .jq-selectbox .people4,
+    .jq-selectbox.people4,
     {
         position: relative;
         &:before {
@@ -146,9 +148,10 @@
 
         }
     }
-    .jq-selectbox li.people4 {
+    .jq-selectbox .people4,
+    .jq-selectbox .people4 {
         &:after {
-            content: "-\e925";
+            content: "-\e925" !important;
         }
     }
     .jq-selectbox__select {

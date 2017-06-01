@@ -936,11 +936,15 @@ footer {
           left: 2px; } }
   .booking-form .jq-selectbox li {
     padding: 15px 10px 15px 80px; }
-  .booking-form .jq-selectbox li.people3,
-  .booking-form .jq-selectbox li.people4 {
+  .booking-form .jq-selectbox .people3,
+  .booking-form .jq-selectbox.people3,
+  .booking-form .jq-selectbox .people4,
+  .booking-form .jq-selectbox.people4 {
     position: relative; }
-    .booking-form .jq-selectbox li.people3:before,
-    .booking-form .jq-selectbox li.people4:before {
+    .booking-form .jq-selectbox .people3:before,
+    .booking-form .jq-selectbox.people3:before,
+    .booking-form .jq-selectbox .people4:before,
+    .booking-form .jq-selectbox.people4:before {
       content: "\e923";
       font-family: IconFont;
       color: #333;
@@ -948,8 +952,10 @@ footer {
       top: 6px;
       left: 6px;
       font-size: 31px; }
-    .booking-form .jq-selectbox li.people3:after,
-    .booking-form .jq-selectbox li.people4:after {
+    .booking-form .jq-selectbox .people3:after,
+    .booking-form .jq-selectbox.people3:after,
+    .booking-form .jq-selectbox .people4:after,
+    .booking-form .jq-selectbox.people4:after {
       content: "-\e924";
       font-family: IconFont;
       color: #333;
@@ -957,8 +963,9 @@ footer {
       top: 5px;
       left: 21px;
       font-size: 31px; }
-  .booking-form .jq-selectbox li.people4:after {
-    content: "-\e925"; }
+  .booking-form .jq-selectbox .people4:after,
+  .booking-form .jq-selectbox .people4:after {
+    content: "-\e925" !important; }
   .booking-form .jq-selectbox__select {
     width: 210px;
     height: 45px;
