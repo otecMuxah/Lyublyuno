@@ -1,4 +1,4 @@
-.form-control {
+.booking-form {
     display: flex;
     flex-direction: column;
     margin-top: 4px;
@@ -22,24 +22,24 @@
         font-weight: 500;
         color: $text-color;
     }
-    &__text-input {
-        flex: 1 1 20%;
+    .form-control {
         border: 1px solid $color-gray-2;
         background-color: rgb(255, 255, 255);
         height: 36px;
         padding: 0 10px;
-    }
-    &__date-input {
-        border: 1px solid $color-gray-2;
-        background-color: rgb(255, 255, 255);
-        height: 36px;
-        position: relative;
-        padding: 0 10px;
-        width: 128px;
-        @include width-1310 {
-            width: 100%;
+        &_text-input {
+            flex: 1 1 20%;
+
+        }
+        &_date-input {
+            position: relative;
+            width: 128px;
+            @include width-1310 {
+                width: 100%;
+            }
         }
     }
+
     .date-input {
         position: relative;
         margin-right: 42px;
@@ -47,7 +47,7 @@
             width: 100%;
         }
         &:last-child {
-            .form-control__title {
+            .booking-form__title {
                 width: auto;
                 flex: 1 1 auto;
                 margin-right: 27px;
@@ -187,7 +187,7 @@
     .number-of-people {
         margin-right: 28px;
         &:last-child {
-            .form-control__title {
+            .booking-form__title {
                 width: auto;
                 flex: 1 1 auto;
                 margin-right: 21px;

@@ -807,7 +807,7 @@ footer {
       left: 12px;
       font-size: 23px; }
 
-.form-control {
+.booking-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,9 +818,9 @@ footer {
   margin-top: 4px;
   max-width: 100%; }
   @media screen and (max-width: 768px) {
-    .form-control {
+    .booking-form {
       max-width: 100%; } }
-  .form-control__label {
+  .booking-form__label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -830,7 +830,7 @@ footer {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-bottom: 17px; }
-  .form-control__title {
+  .booking-form__title {
     width: 112px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 112px;
@@ -838,44 +838,41 @@ footer {
     font-size: 16px;
     font-weight: 500;
     color: #333; }
-  .form-control__text-input {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 20%;
-            flex: 1 1 20%;
+  .booking-form .form-control {
     border: 1px solid #9d9d9d;
     background-color: white;
     height: 36px;
     padding: 0 10px; }
-  .form-control__date-input {
-    border: 1px solid #9d9d9d;
-    background-color: white;
-    height: 36px;
-    position: relative;
-    padding: 0 10px;
-    width: 128px; }
-    @media screen and (max-width: 1310px) {
-      .form-control__date-input {
-        width: 100%; } }
-  .form-control .date-input {
+    .booking-form .form-control_text-input {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 20%;
+              flex: 1 1 20%; }
+    .booking-form .form-control_date-input {
+      position: relative;
+      width: 128px; }
+      @media screen and (max-width: 1310px) {
+        .booking-form .form-control_date-input {
+          width: 100%; } }
+  .booking-form .date-input {
     position: relative;
     margin-right: 42px; }
     @media screen and (max-width: 1310px) {
-      .form-control .date-input {
+      .booking-form .date-input {
         width: 100%; } }
-    .form-control .date-input:last-child .form-control__title {
+    .booking-form .date-input:last-child .booking-form__title {
       width: auto;
       -webkit-box-flex: 1;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
       margin-right: 27px; }
       @media screen and (max-width: 1310px) {
-        .form-control .date-input:last-child .form-control__title {
+        .booking-form .date-input:last-child .booking-form__title {
           width: 112px;
           -webkit-box-flex: 0;
               -ms-flex: 0 0 112px;
                   flex: 0 0 112px;
           margin-right: 0; } }
-    .form-control .date-input:before {
+    .booking-form .date-input:before {
       content: "\e91d";
       color: #545454;
       font-family: IconFont;
@@ -886,33 +883,33 @@ footer {
       position: absolute;
       z-index: 2;
       font-size: 26px; }
-  .form-control .text-input {
+  .booking-form .text-input {
     width: 100%;
     margin-top: 3px; }
-    .form-control .text-input:last-child {
+    .booking-form .text-input:last-child {
       margin-bottom: 20px; }
-  .form-control__small-label-holder {
+  .booking-form__small-label-holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     @media screen and (max-width: 1310px) {
-      .form-control__small-label-holder {
+      .booking-form__small-label-holder {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
-  .form-control .jq-selectbox__dropdown {
+  .booking-form .jq-selectbox__dropdown {
     width: 100%; }
-  .form-control .jq-selectbox ul {
+  .booking-form .jq-selectbox ul {
     background: #fff;
     border: 1px solid #9d9d9d; }
-  .form-control .jq-selectbox__trigger {
+  .booking-form .jq-selectbox__trigger {
     position: absolute;
     right: 16px;
     top: 34%; }
-  .form-control .jq-selectbox__trigger-arrow {
+  .booking-form .jq-selectbox__trigger-arrow {
     position: relative; }
-    .form-control .jq-selectbox__trigger-arrow:before {
+    .booking-form .jq-selectbox__trigger-arrow:before {
       content: '';
       position: absolute;
       top: 0;
@@ -924,15 +921,15 @@ footer {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg); }
       @media screen and (max-width: 1310px) {
-        .form-control .jq-selectbox__trigger-arrow:before {
+        .booking-form .jq-selectbox__trigger-arrow:before {
           left: 2px; } }
-  .form-control .jq-selectbox li {
+  .booking-form .jq-selectbox li {
     padding: 15px 10px 15px 80px; }
-  .form-control .jq-selectbox .people3,
-  .form-control .jq-selectbox.people3 .jq-selectbox__select {
+  .booking-form .jq-selectbox .people3,
+  .booking-form .jq-selectbox.people3 .jq-selectbox__select {
     position: relative; }
-    .form-control .jq-selectbox .people3:before,
-    .form-control .jq-selectbox.people3 .jq-selectbox__select:before {
+    .booking-form .jq-selectbox .people3:before,
+    .booking-form .jq-selectbox.people3 .jq-selectbox__select:before {
       content: "\e923";
       font-family: IconFont;
       color: #333;
@@ -941,8 +938,8 @@ footer {
       left: 6px;
       font-size: 31px;
       z-index: 3; }
-    .form-control .jq-selectbox .people3:after,
-    .form-control .jq-selectbox.people3 .jq-selectbox__select:after {
+    .booking-form .jq-selectbox .people3:after,
+    .booking-form .jq-selectbox.people3 .jq-selectbox__select:after {
       content: "-\e924";
       font-family: IconFont;
       color: #333;
@@ -950,11 +947,11 @@ footer {
       top: 5px;
       left: 21px;
       font-size: 31px; }
-  .form-control .jq-selectbox .people4,
-  .form-control .jq-selectbox.people4 .jq-selectbox__select {
+  .booking-form .jq-selectbox .people4,
+  .booking-form .jq-selectbox.people4 .jq-selectbox__select {
     position: relative; }
-    .form-control .jq-selectbox .people4:before,
-    .form-control .jq-selectbox.people4 .jq-selectbox__select:before {
+    .booking-form .jq-selectbox .people4:before,
+    .booking-form .jq-selectbox.people4 .jq-selectbox__select:before {
       content: "\e923";
       font-family: IconFont;
       color: #333;
@@ -963,8 +960,8 @@ footer {
       left: 6px;
       font-size: 31px;
       z-index: 3; }
-    .form-control .jq-selectbox .people4:after,
-    .form-control .jq-selectbox.people4 .jq-selectbox__select:after {
+    .booking-form .jq-selectbox .people4:after,
+    .booking-form .jq-selectbox.people4 .jq-selectbox__select:after {
       content: "-\e925";
       font-family: IconFont;
       color: #333;
@@ -972,7 +969,7 @@ footer {
       top: 5px;
       left: 21px;
       font-size: 31px; }
-  .form-control .jq-selectbox__select {
+  .booking-form .jq-selectbox__select {
     width: 210px;
     height: 45px;
     padding-left: 8px;
@@ -989,35 +986,35 @@ footer {
             align-items: center;
     border: 1px solid #9d9d9d; }
     @media screen and (max-width: 1310px) {
-      .form-control .jq-selectbox__select {
+      .booking-form .jq-selectbox__select {
         width: 185px; } }
-  .form-control .number-of-people {
+  .booking-form .number-of-people {
     margin-right: 28px; }
-    .form-control .number-of-people:last-child .form-control__title {
+    .booking-form .number-of-people:last-child .booking-form__title {
       width: auto;
       -webkit-box-flex: 1;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
       margin-right: 21px; }
       @media screen and (max-width: 1310px) {
-        .form-control .number-of-people:last-child .form-control__title {
+        .booking-form .number-of-people:last-child .booking-form__title {
           width: 112px;
           -webkit-box-flex: 0;
               -ms-flex: 0 0 112px;
                   flex: 0 0 112px;
           margin-right: 0; } }
-    .form-control .number-of-people .jq-selectbox__select {
+    .booking-form .number-of-people .jq-selectbox__select {
       height: 34px;
       width: 61px; }
-    .form-control .number-of-people .jq-selectbox li {
+    .booking-form .number-of-people .jq-selectbox li {
       padding: 15px; }
-  .form-control__result {
+  .booking-form__result {
     margin-bottom: 19px; }
-  .form-control__summ {
+  .booking-form__summ {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -0.3px; }
-  .form-control__submit {
+  .booking-form__submit {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
@@ -1028,7 +1025,7 @@ footer {
     border: 0;
     background: #642121;
     transition: 0.2s; }
-    .form-control__submit:hover {
+    .booking-form__submit:hover {
       background: red;
       transition: 0.2s; }
 

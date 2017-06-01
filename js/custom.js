@@ -8,8 +8,8 @@ $(window).load(function(){
 	$('body').removeClass('loaded');
 
 	const $bgSlider = $('.background-slider'),
-		$dateInput = $('.form-control__date-input'),
-		$select = $('.form-control__select'),
+		$dateInput = $('.form-control_date-input'),
+		$select = $('.booking-form__select'),
 		$hamburger = $('.header__hamburger'),
 		$navHolder = $('.header__nav-holder');
 
